@@ -277,8 +277,8 @@ select {
     }
 
 
-    h1 {
-        font-size: 2em;
+    .program-heading {
+        font-size: 52px;
     }
 
 
@@ -303,8 +303,14 @@ select {
 
     }
 
-    h1 {
-        font-size: 1em;
+    .container {
+        width: 95%;
+
+
+    }
+
+    .program-heading {
+        font-size: 35px;
     }
 
 }
