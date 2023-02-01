@@ -263,7 +263,7 @@ select {
         grid-template-columns: 1fr 1fr;
     }
 
- 
+
 
     .content-wrap {
 
@@ -274,6 +274,11 @@ select {
     .filter {
 
         position: static;
+    }
+
+
+    h1 {
+        font-size: 2em;
     }
 
 
@@ -297,4 +302,9 @@ select {
         background-position: 80% 100%;
 
     }
+
+    h1 {
+        font-size: 1em;
+    }
+
 }
