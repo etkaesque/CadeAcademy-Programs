@@ -1,5 +1,8 @@
-*, *::before, *::after {
-    box-sizing: border-box; }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #f2f2f2;
@@ -15,13 +18,14 @@ body {
 h1 {
     font-size: 72px;
 }
+
 .content-wrap {
 
     position: relative;
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 2fr;
-    
+
 }
 
 .program-tag {
@@ -44,6 +48,7 @@ h1 {
     align-items: center;
 
 }
+
 .banner-pink {
     color: pink;
 }
@@ -81,7 +86,7 @@ h1 {
 
 
 .program {
-    
+
     background-color: white;
     padding: 35px;
     position: relative;
@@ -117,7 +122,7 @@ h1 {
 .program-tag {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
     width: 100%;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -149,7 +154,7 @@ h1 {
 
 }
 
-   
+
 
 .filter-name {
     display: block;
@@ -179,6 +184,7 @@ select {
 
     margin-bottom: 10px;
 }
+
 /* .banner::after {
     content: url("arrow.svg");
     position: relative;
@@ -216,7 +222,7 @@ select {
 
     height: 100%;
     max-width: 97px;
-   
+
 
 }
 
@@ -232,4 +238,63 @@ select {
     letter-spacing: 1.2px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+@media (max-width: 1260px) {
+
+    .programs {
+
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 92%;
+
+
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .programs {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+ 
+
+    .content-wrap {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .filter {
+
+        position: static;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 750px) {
+
+    .programs {
+
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+
+        height: 300px;
+        align-items: flex-start;
+        background-size: 100%;
+        background-position: 80% 100%;
+
+    }
 }
