@@ -1,0 +1,44 @@
+@use 'variables/colors.scss';
+@use 'responsive.scss';
+
+.banner {
+    background-position: 80% 65%;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 30px;
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-color: colors.$white;
+    font-size: 24px;
+    padding: 30px 40px;
+    font-weight: 700;
+    background-size: 34%;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive.sm {
+        height: 300px;
+        align-items: flex-start;
+        background-size: 100%;
+        background-position: 80% 100%;
+        padding-bottom: 150px;
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+
+    .link-wrapper {
+
+        .banner-pink {
+            color: colors.$pink;
+        }
+
+        .black-pink {
+            color: colors.$black;
+        }
+    }
+
+}
